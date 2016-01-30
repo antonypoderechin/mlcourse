@@ -39,7 +39,7 @@ print 'Mean and median age:', mean, median
 # Correlation
 sib = data['SibSp']
 parch = data['Parch']
-print 'Correlation', parch.corr(sib)
+print 'Correlation:', parch.corr(sib)
 
 
 # Most common female name
@@ -58,4 +58,4 @@ miss = miss.append(mlle)
 miss = miss.str.split('.').str.get(1).str.split(' ').str.get(1)
 # Count most common
 first_names = mrs.append(miss)
-print first_names.value_counts()
+print 'Most common name:', first_names.value_counts().index[0]
