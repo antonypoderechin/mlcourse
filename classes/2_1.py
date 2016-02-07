@@ -1,5 +1,5 @@
 #
-# First homework of Week 2
+# Week 2
 #
 
 from __future__ import division
@@ -19,6 +19,7 @@ y = data[0]
 k_folds = KFold(len(X), n_folds=5, shuffle=True, random_state=42)
 
 
+# Helper functions
 def score(k):
     classifier = KNeighborsClassifier(n_neighbors=k)
     return [k, cross_validation.cross_val_score(classifier, X, y, cv=k_folds, scoring="accuracy").mean()]
