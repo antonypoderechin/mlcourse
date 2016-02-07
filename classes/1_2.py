@@ -1,7 +1,6 @@
 #
 # Second homework of Week 1
 #
-
 from __future__ import division
 from sklearn.tree import DecisionTreeClassifier
 import pandas

@@ -1,7 +1,6 @@
 #
 # Week 2
 #
-
 from __future__ import division
 import pandas
 import sklearn

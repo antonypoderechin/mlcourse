@@ -1,7 +1,6 @@
 #
 # First homework of Week 1
 #
-
 from __future__ import division
 import pandas
 
